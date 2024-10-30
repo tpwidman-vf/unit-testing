@@ -34,6 +34,12 @@ Then you can use it like:
 Enter the JIRA ticket number (e.g., 123): 123
 Commit message will be:
 JIRA-123 updates to x,y,z
-
 ```
+
+### Environment Variables
+
+- **PROJECT_PREFIX**: Set this to customize the prefix for your ticket numbers (e.g., `JIRA`, `WIN`, etc.). Defaults to `JIRA`.
+- **TICKET_NUMBER**: Optionally set this environment variable to avoid being prompted for a ticket number repeatedly. If set, the script will use this value for the current commit.
+- **PROCEED_PROMPT**: Set this to `false` if you want to skip the confirmation step (default is `true`).
+
 https://github.com/conventional-changelog/commitlint/tree/master/@commitlint/config-conventional
