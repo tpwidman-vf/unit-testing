@@ -27,5 +27,13 @@ To use the script, set up an alias in your `.gitconfig` or `.git/config`:
 ```ini
 [alias]
     cmj = "!sh ./.git-commit-prepend-jira.sh"
+```
+Then you can use it like:
+```
+> git cmj "updates to x,y,z"
+Enter the JIRA ticket number (e.g., 123): 123
+Commit message will be:
+JIRA-123 updates to x,y,z
 
+```
 https://github.com/conventional-changelog/commitlint/tree/master/@commitlint/config-conventional
