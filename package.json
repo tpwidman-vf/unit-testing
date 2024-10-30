@@ -6,6 +6,16 @@
   "scripts": {
     "test": "jest"
   },
+  "commitlint": {
+    "rules": {
+      "references-empty": [2, "never"]
+    },
+    "parserPreset": {
+      "parserOpts": {
+        "issuePrefixes": ["WIN-", "JIRA-"]
+      }
+    }
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
