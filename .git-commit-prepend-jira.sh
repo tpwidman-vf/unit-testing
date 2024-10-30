@@ -1,7 +1,13 @@
 #!/bin/bash
 
-# Get the project prefix from the environment variable or default to "JIRA"
-PROJECT_PREFIX=${PROJECT_PREFIX:-"JIRA"}
+# Check if PROJECT_PREFIX is set in the environment
+if [ -z "$PROJECT_PREFIX" ]; then
+  # Prompt for the project prefix if not set
+  read -p "What JIRA prefix does this project use? (e.g., JIRA, WIN): " PROJECT_PREFIX
+  export PROJECT_PREFIX  # Set the PROJECT_PREFIX environment variable
+else
+  echo "Using project prefix: $PROJECT_PREFIX"
+fi
 
 # Check if TICKET_NUMBER is set in the environment
 if [ -z "$TICKET_NUMBER" ]; then
@@ -37,4 +43,4 @@ if [ "$PROCEED_PROMPT" = true ]; then
 fi
 
 # Use git commit with the modified commit message
-git commit -m "$COMMIT_MSG"
+git commit -m "$COMMIT_MSG
