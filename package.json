@@ -16,6 +16,11 @@
       }
     }
   },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint --edit $1"
+    }
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
