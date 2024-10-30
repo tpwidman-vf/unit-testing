@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+  <file path="/Users/taylor.widman/Sandbox/unit-testing/src/index.spec.ts">
+    <testCase name="getData should return an object" duration="1"/>
+    <testCase name="getData should handle an ID correctly" duration="0"/>
+  </file>
+</testExecutions>

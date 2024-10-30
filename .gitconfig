@@ -1,0 +1,2 @@
+[alias]
+    cmj = "!sh ./.git-commit-prepend-jira.sh"
