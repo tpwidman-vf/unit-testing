@@ -38,6 +38,8 @@ JIRA-123 updates to x,y,z
 
 ### Environment Variables
 
+These can be set in advanced or when prompted they will be set by the bash script.
+
 - **PROJECT_PREFIX**: Set this to customize the prefix for your ticket numbers (e.g., `JIRA`, `WIN`, etc.). Defaults to `JIRA`.
 - **TICKET_NUMBER**: Optionally set this environment variable to avoid being prompted for a ticket number repeatedly. If set, the script will use this value for the current commit.
 - **PROCEED_PROMPT**: Set this to `false` if you want to skip the confirmation step (default is `true`).
