@@ -4,15 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint": "commitlint --edit"
   },
   "commitlint": {
     "rules": {
-      "references-empty": [2, "never"]
+      "references-empty": [
+        2,
+        "never"
+      ]
     },
     "parserPreset": {
       "parserOpts": {
-        "issuePrefixes": ["WIN-", "JIRA-"]
+        "issuePrefixes": [
+          "JIRA-",
+          "WIN-"
+        ]
       }
     }
   },
@@ -35,6 +42,7 @@
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.5.0",
+    "@commitlint/types": "^19.5.0",
     "husky": "^9.1.6"
   }
 }
